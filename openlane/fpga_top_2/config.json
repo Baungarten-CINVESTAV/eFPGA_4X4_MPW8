@@ -1,0 +1,83 @@
+
+{
+    "DESIGN_NAME": "fpga_top",
+    "VERILOG_FILES": ["dir::FPGA_Files/SRC/fpga_top.v","dir::FPGA_Files/SRC/wires.v"],
+    "VERILOG_FILES_BLACKBOX":["dir::FPGA_Files/SRC/sub_module/*.v","dir::FPGA_Files/SRC/lb/*.v","dir::FPGA_Files/SRC/routing/*.v","dir::FPGA_Files/SRC/fpga_defines.v"],
+    "EXTRA_LEFS":["dir::lef/sb_0__0_.lef",
+"dir::lef/sb_0__1_.lef",
+"dir::lef/sb_0__4_.lef",
+"dir::lef/sb_1__0_.lef",
+"dir::lef/sb_1__1_.lef",
+"dir::lef/sb_1__4_.lef",
+"dir::lef/sb_4__0_.lef",
+"dir::lef/sb_4__1_.lef",
+"dir::lef/sb_4__4_.lef",
+"dir::lef/cbx_1__0_.lef",
+"dir::lef/cbx_1__1_.lef",
+"dir::lef/cbx_1__4_.lef",
+"dir::lef/cby_0__1_.lef",
+"dir::lef/cby_1__1_.lef",
+"dir::lef/cby_4__1_.lef",
+"dir::lef/grid_io_top.lef",
+"dir::lef/grid_io_right.lef",
+"dir::lef/grid_io_bottom.lef",
+"dir::lef/grid_io_left.lef",
+"dir::lef/grid_clb.lef"],
+    "EXTRA_GDS_FILES": ["dir::gds/sb_0__0_.gds",
+"dir::gds/sb_0__1_.gds",
+"dir::gds/sb_0__4_.gds",
+"dir::gds/sb_1__0_.gds",
+"dir::gds/sb_1__1_.gds",
+"dir::gds/sb_1__4_.gds",
+"dir::gds/sb_4__0_.gds",
+"dir::gds/sb_4__1_.gds",
+"dir::gds/sb_4__4_.gds",
+"dir::gds/cbx_1__0_.gds",
+"dir::gds/cbx_1__1_.gds",
+"dir::gds/cbx_1__4_.gds",
+"dir::gds/cby_0__1_.gds",
+"dir::gds/cby_1__1_.gds",
+"dir::gds/cby_4__1_.gds",
+"dir::gds/grid_io_top.gds",
+"dir::gds/grid_io_right.gds",
+"dir::gds/grid_io_bottom.gds",
+"dir::gds/grid_io_left.gds",
+"dir::gds/grid_clb.gds"],
+
+"SYNTH_READ_BLACKBOX_LIB":1,
+
+    "CLOCK_PORT":"prog_clk",
+    "CLOCK_PERIOD": 20,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 2810 2950",
+
+
+     "VDD_NETS": ["vccd1"],
+    "GND_NETS": ["vssd1"],
+    "VDD_PIN":["vccd1"],
+    "GND_PIN":["vssd1"],
+    "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
+    
+    "MAGIC_ZEROIZE_ORIGIN":1,
+    "GRT_ADJUSTMENT":0.21,
+       
+    "FP_PDN_HPITCH":75,
+    "FP_PDN_VPITCH":70,
+    "FP_PDN_HOFFSET":37,
+    "FP_PDN_VOFFSET":37,
+
+
+
+"FP_PDN_MACRO_HOOKS":["grid_io_top_1__5_ vccd1 vssd1 vccd1 vssd1, grid_io_top_2__5_ vccd1 vssd1 vccd1 vssd1, grid_io_top_3__5_ vccd1 vssd1 vccd1 vssd1, grid_io_top_4__5_ vccd1 vssd1 vccd1 vssd1, grid_io_right_5__4_ vccd1 vssd1 vccd1 vssd1, grid_io_right_5__3_ vccd1 vssd1 vccd1 vssd1, grid_io_right_5__2_ vccd1 vssd1 vccd1 vssd1, grid_io_right_5__1_ vccd1 vssd1 vccd1 vssd1, grid_io_bottom_4__0_ vccd1 vssd1 vccd1 vssd1, grid_io_bottom_3__0_ vccd1 vssd1 vccd1 vssd1, grid_io_bottom_2__0_ vccd1 vssd1 vccd1 vssd1, grid_io_bottom_1__0_ vccd1 vssd1 vccd1 vssd1, grid_io_left_0__1_ vccd1 vssd1 vccd1 vssd1, grid_io_left_0__2_ vccd1 vssd1 vccd1 vssd1, grid_io_left_0__3_ vccd1 vssd1 vccd1 vssd1, grid_io_left_0__4_ vccd1 vssd1 vccd1 vssd1, grid_clb_1__1_ vccd1 vssd1 vccd1 vssd1, grid_clb_1__2_ vccd1 vssd1 vccd1 vssd1, grid_clb_1__3_ vccd1 vssd1 vccd1 vssd1, grid_clb_1__4_ vccd1 vssd1 vccd1 vssd1, grid_clb_2__1_ vccd1 vssd1 vccd1 vssd1, grid_clb_2__2_ vccd1 vssd1 vccd1 vssd1, grid_clb_2__3_ vccd1 vssd1 vccd1 vssd1, grid_clb_2__4_ vccd1 vssd1 vccd1 vssd1, grid_clb_3__1_ vccd1 vssd1 vccd1 vssd1, grid_clb_3__2_ vccd1 vssd1 vccd1 vssd1, grid_clb_3__3_ vccd1 vssd1 vccd1 vssd1, grid_clb_3__4_ vccd1 vssd1 vccd1 vssd1, grid_clb_4__1_ vccd1 vssd1 vccd1 vssd1, grid_clb_4__2_ vccd1 vssd1 vccd1 vssd1, grid_clb_4__3_ vccd1 vssd1 vccd1 vssd1, grid_clb_4__4_ vccd1 vssd1 vccd1 vssd1, sb_0__0_ vccd1 vssd1 vccd1 vssd1, sb_0__1_ vccd1 vssd1 vccd1 vssd1, sb_0__2_ vccd1 vssd1 vccd1 vssd1, sb_0__3_ vccd1 vssd1 vccd1 vssd1, sb_0__4_ vccd1 vssd1 vccd1 vssd1, sb_1__0_ vccd1 vssd1 vccd1 vssd1, sb_2__0_ vccd1 vssd1 vccd1 vssd1, sb_3__0_ vccd1 vssd1 vccd1 vssd1, sb_1__1_ vccd1 vssd1 vccd1 vssd1, sb_1__2_ vccd1 vssd1 vccd1 vssd1, sb_1__3_ vccd1 vssd1 vccd1 vssd1, sb_2__1_ vccd1 vssd1 vccd1 vssd1, sb_2__2_ vccd1 vssd1 vccd1 vssd1, sb_2__3_ vccd1 vssd1 vccd1 vssd1, sb_3__1_ vccd1 vssd1 vccd1 vssd1, sb_3__2_ vccd1 vssd1 vccd1 vssd1, sb_3__3_ vccd1 vssd1 vccd1 vssd1, sb_1__4_ vccd1 vssd1 vccd1 vssd1, sb_2__4_ vccd1 vssd1 vccd1 vssd1, sb_3__4_ vccd1 vssd1 vccd1 vssd1, sb_4__0_ vccd1 vssd1 vccd1 vssd1, sb_4__1_ vccd1 vssd1 vccd1 vssd1, sb_4__2_ vccd1 vssd1 vccd1 vssd1, sb_4__3_ vccd1 vssd1 vccd1 vssd1, sb_4__4_ vccd1 vssd1 vccd1 vssd1, cbx_1__0_ vccd1 vssd1 vccd1 vssd1, cbx_2__0_ vccd1 vssd1 vccd1 vssd1, cbx_3__0_ vccd1 vssd1 vccd1 vssd1, cbx_4__0_ vccd1 vssd1 vccd1 vssd1, cbx_1__1_ vccd1 vssd1 vccd1 vssd1, cbx_1__2_ vccd1 vssd1 vccd1 vssd1, cbx_1__3_ vccd1 vssd1 vccd1 vssd1, cbx_2__1_ vccd1 vssd1 vccd1 vssd1, cbx_2__2_ vccd1 vssd1 vccd1 vssd1, cbx_2__3_ vccd1 vssd1 vccd1 vssd1, cbx_3__1_ vccd1 vssd1 vccd1 vssd1, cbx_3__2_ vccd1 vssd1 vccd1 vssd1, cbx_3__3_ vccd1 vssd1 vccd1 vssd1, cbx_4__1_ vccd1 vssd1 vccd1 vssd1, cbx_4__2_ vccd1 vssd1 vccd1 vssd1, cbx_4__3_ vccd1 vssd1 vccd1 vssd1, cbx_1__4_ vccd1 vssd1 vccd1 vssd1, cbx_2__4_ vccd1 vssd1 vccd1 vssd1, cbx_3__4_ vccd1 vssd1 vccd1 vssd1, cbx_4__4_ vccd1 vssd1 vccd1 vssd1, cby_0__1_ vccd1 vssd1 vccd1 vssd1, cby_0__2_ vccd1 vssd1 vccd1 vssd1, cby_0__3_ vccd1 vssd1 vccd1 vssd1, cby_0__4_ vccd1 vssd1 vccd1 vssd1, cby_1__1_ vccd1 vssd1 vccd1 vssd1, cby_1__2_ vccd1 vssd1 vccd1 vssd1, cby_1__3_ vccd1 vssd1 vccd1 vssd1, cby_1__4_ vccd1 vssd1 vccd1 vssd1, cby_2__1_ vccd1 vssd1 vccd1 vssd1, cby_2__2_ vccd1 vssd1 vccd1 vssd1, cby_2__3_ vccd1 vssd1 vccd1 vssd1, cby_2__4_ vccd1 vssd1 vccd1 vssd1, cby_3__1_ vccd1 vssd1 vccd1 vssd1, cby_3__2_ vccd1 vssd1 vccd1 vssd1, cby_3__3_ vccd1 vssd1 vccd1 vssd1, cby_3__4_ vccd1 vssd1 vccd1 vssd1, cby_4__1_ vccd1 vssd1 vccd1 vssd1, cby_4__2_ vccd1 vssd1 vccd1 vssd1, cby_4__3_ vccd1 vssd1 vccd1 vssd1, cby_4__4_ vccd1 vssd1 vccd1 vssd1"],
+
+
+
+    "ROUTING_CORES":24,
+    "RT_MAX_LAYER": "met4"
+    
+
+    
+    
+    
+    
+}

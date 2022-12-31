@@ -1,0 +1,47 @@
+
+{
+"grid_x": 8,
+"grid_y": 8,
+"clb_x": 123,
+"clb_y": 123,
+"sb_x": 115,
+"sb_y": 115,
+"cbx_x": "140",
+"cbx_y": "120",
+"cby_x": "expr::$cbx_y",
+"cby_y": "expr::$cbx_x",
+"io_hor_x": 85,
+"io_hor_y": 45,
+"io_ver_x": "expr::$io_hor_y",
+"io_ver_y": "expr::$io_hor_x",
+"io_ver_to_sb": 35,
+"io_hor_to_sb": 35,
+"io_ver_to_dec": "expr::$io_ver_to_sb",
+"EMBED_IOS": 1,
+"tie_x": 60,
+"tie_y": 70,
+
+    "DESIGN_NAME": "cbx_1__0_",
+    "DESIGN_IS_CORE": 0,
+    "VERILOG_FILES": ["dir::../../FPGA_Files/SRC/routing/cbx_1__0_.v","dir::../../FPGA_Files/SRC/sub_module/*.v","dir::../../FPGA_Files/SRC/lb/*.v"],
+"SYNTH_READ_BLACKBOX_LIB":1,
+    "CLOCK_PORT":"prog_clk",
+    "CLOCK_PERIOD": 20,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 200 200",
+    "FP_CORE_UTIL": 80,
+    "CELL_PAD":1,
+    "PL_BASIC_PLACEMENT":0,
+    "CLOCK_TREE_SYNTH":0,
+    
+    "DIODE_INSERTION_STRATEGY": 4,
+    "PL_RESIZER_DESIGN_OPTIMIZATIONS)": 0,
+    "PL_RESIZER_TIMING_OPTIMIZATIONS)": 0,
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS)": 0,
+    "ROUTING_CORES":24,
+     "VDD_NETS": ["vccd1"],
+    "GND_NETS": ["vssd1"],
+    "RT_MAX_LAYER": "met4"
+    
+    
+}
